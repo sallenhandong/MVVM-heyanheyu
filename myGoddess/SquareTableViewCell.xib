@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="130" id="KGk-i7-Jjw" customClass="SquareTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="354" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="354" height="129"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hanwei.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="la3-zf-S5n">
+                        <rect key="frame" x="8" y="8" width="60" height="60"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="5pS-xk-MOc"/>
+                            <constraint firstAttribute="width" constant="60" id="pRE-QS-etV"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="音乐君" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hRz-we-DT6">
+                        <rect key="frame" x="85" y="8" width="249" height="26"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="249" id="bxR-Kf-i3R"/>
+                            <constraint firstAttribute="height" constant="26" id="oMX-ky-62C"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MCG-Ee-jZm">
+                        <rect key="frame" x="85" y="42" width="49" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="DkE-5g-vFN"/>
+                            <constraint firstAttribute="width" constant="49" id="If6-kH-qOC"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="内容手机登录手机登录计算亮点就爱上了在男现场" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AuL-2s-Lpj">
+                        <rect key="frame" x="8" y="76" width="300" height="45"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="45" id="fXN-Dm-iIR"/>
+                            <constraint firstAttribute="width" constant="300" id="wfS-Mg-6wo"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wk-rd-Sdc">
+                        <rect key="frame" x="314" y="74" width="30" height="30"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <state key="normal" backgroundImage="like-3.png"/>
+                        <state key="selected" backgroundImage="like_fill-2.png"/>
+                        <connections>
+                            <action selector="likeClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HJJ-1X-BS9"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="leadingMargin" secondItem="la3-zf-S5n" secondAttribute="leading" id="bzE-K8-nGV"/>
+                    <constraint firstItem="AuL-2s-Lpj" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" constant="-19" id="cRq-yk-l4E"/>
+                    <constraint firstItem="hRz-we-DT6" firstAttribute="leading" secondItem="la3-zf-S5n" secondAttribute="trailing" constant="17" id="fTh-da-I3T"/>
+                    <constraint firstItem="MCG-Ee-jZm" firstAttribute="leading" secondItem="la3-zf-S5n" secondAttribute="trailing" constant="17" id="mFl-Yj-cny"/>
+                    <constraint firstAttribute="topMargin" secondItem="hRz-we-DT6" secondAttribute="top" id="qTi-gg-V8E"/>
+                    <constraint firstItem="MCG-Ee-jZm" firstAttribute="top" secondItem="hRz-we-DT6" secondAttribute="bottom" constant="8" id="rq8-1f-sU8"/>
+                    <constraint firstItem="AuL-2s-Lpj" firstAttribute="top" secondItem="MCG-Ee-jZm" secondAttribute="bottom" constant="11" id="ypI-yH-QhL"/>
+                    <constraint firstAttribute="topMargin" secondItem="la3-zf-S5n" secondAttribute="top" id="yxy-Wt-2Ky"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentLabel" destination="AuL-2s-Lpj" id="JSG-L5-5e4"/>
+                <outlet property="headImage" destination="la3-zf-S5n" id="6To-YU-RsL"/>
+                <outlet property="likeBtn" destination="7wk-rd-Sdc" id="lyk-AD-VGY"/>
+                <outlet property="timeLabel" destination="MCG-Ee-jZm" id="4tE-R8-HBS"/>
+            </connections>
+            <point key="canvasLocation" x="-191" y="69"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hanwei.jpg" width="220" height="220"/>
+        <image name="like-3.png" width="200" height="200"/>
+        <image name="like_fill-2.png" width="200" height="200"/>
+    </resources>
+</document>
